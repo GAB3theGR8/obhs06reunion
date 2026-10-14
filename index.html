@@ -216,6 +216,10 @@ section { position: relative; z-index: 1; }
 .v-when { font-family:"Playfair Display",serif; font-size:0.95rem; color:var(--cream); margin-bottom:14px; line-height:1.6; font-style:italic; }
 .map-btn { display:inline-block; padding:9px 24px; border:1.5px solid var(--gold); color:var(--gold); font-family:"Oswald",sans-serif; font-size:0.62rem; letter-spacing:0.35em; text-decoration:none; text-transform:uppercase; border-radius:2px; transition:background 0.2s,color 0.2s; }
 .map-btn:hover { background:var(--gold); color:var(--navy-deep); }
+.venue-btns { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-bottom:10px; }
+.hotel-btn { display:inline-block; padding:10px 22px; background:linear-gradient(135deg, var(--gold) 0%, #7A5200 100%); color:var(--navy-deep); font-family:"Oswald",sans-serif; font-weight:700; font-size:0.68rem; letter-spacing:0.25em; text-decoration:none; text-transform:uppercase; border-radius:2px; transition:opacity 0.2s; }
+.hotel-btn:hover { opacity:0.85; }
+.hotel-note { font-family:"Playfair Display",serif; font-style:italic; font-size:0.82rem; color:rgba(240,229,208,0.5); margin-top:6px; }
 
 /* ══════════════════════════════
    TICKETS
@@ -1132,7 +1136,11 @@ footer { position:relative; z-index:1; background:var(--navy-deep); border-top:1
       <h2 class="v-name">Hilton Garden Inn</h2>
       <p class="v-city">Olive Branch, Mississippi</p>
       <p class="v-when">Saturday, November 14, 2026 &nbsp;&middot;&nbsp; Doors open 7:00 PM</p>
-      <a href="https://maps.google.com/?q=Hilton+Garden+Inn+Olive+Branch+MS" target="_blank" class="map-btn">View on Map</a>
+      <div class="venue-btns">
+        <a href="https://maps.google.com/?q=Hilton+Garden+Inn+Olive+Branch+MS" target="_blank" class="map-btn">View on Map</a>
+        <a href="https://www.hilton.com/en/book/reservation/rooms/?ctyhocn=OLBGIGI&arrivalDate=2026-11-13&departureDate=2026-11-15&groupCode=90B&room1NumAdults=1&cid=OM%2CWW%2CHILTONLINK%2CEN%2CDirectLink" target="_blank" class="hotel-btn">Book Your Room — Special Group Rate</a>
+      </div>
+      <p class="hotel-note">Exclusive rates reserved for Class of 2006 reunion guests. Book early — limited rooms available.</p>
     </div>
   </div>
 </section>
